@@ -10,6 +10,7 @@ int main()
 	cout<< "Welcome,Wamkelekile,Welkom to play the TicTactoe game"<<endl;
 	cout << endl;
 	tic.print();
+	
 	while (1)
 	{
 		cout << "enter the field where you want to play" << tic.getPlayer() << ":" << endl;
@@ -21,6 +22,7 @@ int main()
 		}
 		else 
 		{
+			cout << "illegal move! Try again" << endl;
 			continue;
 		}
 		tic.print();
@@ -29,11 +31,14 @@ int main()
 		if (iswon == true)
 		{
 			cout << "Player" << tic.getPlayer() << " Wins!" << endl;
-		
+			Sleep(3000);
+			tic.restart();
 		}
 		else
 			continue;
+		
 	}
+
 	cout << endl;
 	system("pause");
 	return 0;
