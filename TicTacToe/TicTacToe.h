@@ -1,5 +1,5 @@
 #pragma once
-class TicTocToe
+class TicTacToe
 {
 private:
 	char currentPlayer;
@@ -7,13 +7,13 @@ private:
 	int palce;
 public:
 	int place; // field where the player wants to play
-	TicTocToe(char nowplaying, int field); // constructor
+	TicTacToe(char nowplaying, int field); // constructor
 	void restart();
 	bool move();
 	void print();
 	bool isWon();
 	bool validateMove(int, int);
 
-	~TicTocToe(); // deconstructor
+	~TicTacToe(); // deconstructor
 };
 
