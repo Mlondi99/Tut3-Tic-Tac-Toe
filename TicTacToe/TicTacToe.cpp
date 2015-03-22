@@ -59,7 +59,7 @@ void TicTacToe::print()
 	int boardpostion = 1;
 
 	                                                           //Drawing the tictactoe grid
-	cout <<endl<<" "<< "_____________________" << "\n";
+	cout <<endl<<" "<< "____________________" << "\n";
 	for (rows = 0; rows < 3; rows++)
 	{ 
 		cout << " | ";
@@ -68,7 +68,7 @@ void TicTacToe::print()
 			cout<<" "<< Board[rows][cols] << " | ";
 		}
 	
-		cout <<endl<<" "<< "_____________________" << "\n";
+		cout <<endl<<" "<< "____________________" << "\n";
 	}
 
 }
