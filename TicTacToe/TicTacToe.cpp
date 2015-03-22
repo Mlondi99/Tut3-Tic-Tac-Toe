@@ -129,7 +129,7 @@ bool TicTacToe::move( int field)
 		isvalid = validateMove(1, 0);                            // check if it's an empty space
 		if (isvalid)
 		{
-			Board[1][0] = currentPlayer;                         // allow player to make a move
+			Board[1][0] = currentPlayer;                        // allow player to make a move
 			return true;
 		}
 		else {
